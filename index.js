@@ -8,7 +8,11 @@
 
 function changeGrad(){
   document.getElementById("button-config").addEventListener("click", function(){
-    document.getElementById("login").style.background = "linear-gradient(" + 130 + "deg, #E68745 50%, #6FCBC3 50%)";
+    for(var i = 90; i < 129; i++){
+      setTimeout(function(){},2000);
+      document.getElementById("login").style.background = "linear-gradient(" + i + "deg, #E68745 50%, #6FCBC3 50%)";
+    }
+    // document.getElementById("login").style.background = "linear-gradient(" + 130 + "deg, #E68745 50%, #6FCBC3 50%)";
     var t = document.getElementById("button-config");
     t.parentNode.removeChild(t);
     var y1 = document.getElementById("button-config-in1");
