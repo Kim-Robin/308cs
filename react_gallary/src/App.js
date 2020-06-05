@@ -1,6 +1,6 @@
 import React from 'react';
 import changeGrad from "./intro_components/changeGrad.jsx"
-import Bootstrap from "bootstrap";
+// import Bootstrap from "bootstrap";
 
 // const hello = React.useState();
 
@@ -19,7 +19,7 @@ function App() {
       </div>
     </div>
     <div className="login-button">
-     <button type="button" className="btn btn-lg"   id="button-config">login</button>
+     <button type="button" className="btn btn-lg"   id="button-config" onClick={changeGrad}>login</button>
     </div>
     </div>
 
