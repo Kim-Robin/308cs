@@ -4,7 +4,7 @@ function changeGrad(){
     document.getElementById("button-config").addEventListener("click", function(){
       for(var i = 90; i < 129; i++){
         setTimeout(function(){},200);
-        document.getElementById("login").style.background = "linear-gradient(" + i + "deg, #E68745 50%, #6FCBC3 50%)";
+        document.getElementById("root").style.background = "linear-gradient(" + i + "deg, #E68745 50%, #6FCBC3 50%)";
       }
       // document.getElementById("login").style.background = "linear-gradient(" + 130 + "deg, #E68745 50%, #6FCBC3 50%)";
       var t = document.getElementById("button-config");
