@@ -9,7 +9,7 @@ function App() {
   
   var repeat;
   function repeatHandler(){
-     repeat = setInterval(clickHandler, 0.5);
+     repeat = setInterval(clickHandler, 0.8);
   }
   
   var newDegree = 90;
