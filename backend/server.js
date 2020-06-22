@@ -19,7 +19,8 @@ const connection = mongoose.connection;
 connection.once('open', ()=>{console.log("MongoDB connected successfully")});
 
 //createing route to the website
-
+const routeRobin = require('./routes/robin.js');
+const routeMichael = require('./routes/michael.js');
 
 
 
