@@ -6,7 +6,7 @@ const cors = require('cors');
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5100;
 
 app.use(cors());
 app.use(express.json());
@@ -20,7 +20,12 @@ connection.once('open', ()=>{console.log("MongoDB connected successfully")});
 
 //createing route to the website
 const routeRobin = require('./routes/robin.js');
+const rCategory = require('./routes/rCategory.js');
 const routeMichael = require('./routes/michael.js');
+
+app.use('/robin', routeRobin);
+app.use('/rcategory', rCategory);
+app.use('/michael', routeMichael);
 
 
 

@@ -1,4 +1,4 @@
-const router = require('expres').Router();
+const router = require('express').Router();
 
 const Robin = require('../models/robin.model.js');
 
