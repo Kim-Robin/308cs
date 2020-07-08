@@ -1,0 +1,26 @@
+General Tasks
+ - create grid layout for photos
+ - pagination for photos 
+ - categoires for each photo e.g. hiking, winter, summer...
+ - like system 
+ - filter by date system 
+
+Grid Layout 
+  - 3 per row 
+  - 9 photos per page 
+  - bootstrap 
+
+Pagination 
+  - dynamic page count 
+  - 9 photos per page
+
+Categoires 
+  - filter photos by specific category 
+  - display categories at top of page
+  - highlight category when active 
+  - show categroy icon below each photo 
+
+Dates 
+  - Filter photos by years/months 
+  
+
