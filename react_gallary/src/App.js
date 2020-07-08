@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Link, Switch, Redirect} from 'react-rout
 
 import MainPage from './pages/MainPage.js'
 import Robin from './robin_component/robinMain.js';
-import Michael from './michael_component/test.js'
+import Michael from './michael_component/mikeGalleryWrapper.js'
 
 // import changeGrad from "./intro_components/changeGrad.jsx"
 // import Bootstrap from "bootstrap";
