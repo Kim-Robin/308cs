@@ -57,3 +57,8 @@
   .category-color6{
     background: #A29B4C;
   }
+
+  li{
+    list-style-type: none;
+    padding-top: 2%;
+  }
