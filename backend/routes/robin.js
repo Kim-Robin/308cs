@@ -26,4 +26,6 @@ router.route('/add').post((req,res) => {
 
 })
 
+router.route('/delete').delete()
+
 module.exports = router;
