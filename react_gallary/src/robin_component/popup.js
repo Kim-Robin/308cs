@@ -58,7 +58,7 @@ function CategoryAddPopup(){
                         
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" onClick={saveData}>Save</button>
+                        <button type="button" class="btn btn-primary" onClick={saveData} data-dismiss="modal">Save</button>
                     </div>
                 </div>
             </div>
