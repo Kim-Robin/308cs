@@ -10,7 +10,7 @@ export default class robinMain extends Component{
     render(){
         return (
             <div className="rpage">
-                <Link to="/" className="btn home"><img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png"/></Link>
+                <Link to="/" className="btn redirect"><img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png"/></Link>
 
                 <img src="https://img.icons8.com/metro/44/000000/plus-math.png" type="button" data-toggle="modal" data-target="#exampleModal"/>
                 <CategoryAddPopup />

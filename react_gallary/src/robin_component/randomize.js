@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import axios from 'axios';
+
+
 
 export default class randomize extends Component{
     
@@ -57,7 +60,7 @@ export default class randomize extends Component{
 
     animation(){
         var animationState = Math.floor(Math.random() * 6); 
-        console.log(animationState);
+        // console.log(animationState);
          switch(animationState) {
             case 0:
                 return "w3-animate-opacity";
@@ -87,11 +90,11 @@ export default class randomize extends Component{
             <div className="row justify-content-center">
                 {this.state.categoryname.map
                     (categoryname =>
-                        <div className={"centerize rimg col col-lg-3 col-md-4 col-sm-6 " + this.animation() + " " + this.coloring()}>
+                        <Link to={"/robin/" + categoryname} className={"centerize rimg col col-lg-3 col-md-4 col-sm-6 btn " + this.animation() + " " + this.coloring()}>
                             <h1>
                                 {categoryname}
                             </h1>
-                        </div>
+                        </Link>
                     )
                 }
             </div>
