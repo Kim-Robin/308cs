@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
+// const aws = require("aws-sdk");
 
 dotenv.config();
 
@@ -10,6 +11,15 @@ const port = process.env.PORT || 5100;
 
 app.use(cors());
 app.use(express.json());
+
+//aws configuation for S3
+// aws.config.update({
+//     region: 'us-east-1',
+//     accessKeyId: process.env.AWSAccessKeyId,
+//     secretAccessKey: process.env.AWSSecretKey
+// });
+
+// const S3_BUCKET = process.env.Bucket;
 
 //connecting to MongoDB using MongoDB Atlas
 const uri = process.env.MongoDB;
