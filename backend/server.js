@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
+
 // const aws = require("aws-sdk");
 
 dotenv.config();
@@ -13,8 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 //aws configuation for S3
+
 // aws.config.update({
-//     region: 'us-east-1',
+//     region: 'us-east-2',
 //     accessKeyId: process.env.AWSAccessKeyId,
 //     secretAccessKey: process.env.AWSSecretKey
 // });
@@ -33,9 +35,12 @@ const routeRobin = require('./routes/robin.js');
 const rCategory = require('./routes/rCategory.js');
 const routeMichael = require('./routes/michael.js');
 
+const imageRoute = require('./routes/image_upload.js');
+
 app.use('/robin', routeRobin);
 app.use('/rcategory', rCategory);
 app.use('/michael', routeMichael);
+app.use('/image', imageRoute)
 
 
 
