@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import { Storage } from 'aws-amplify';
+import {ImageAddPopup} from './popup.js';
+// import S3Robin from './S3.js';
 
 export default class randomize extends Component{
 
@@ -46,12 +47,16 @@ export default class randomize extends Component{
                 <Link to="/robin/" className="redirect">
                     <img src="https://img.icons8.com/metro/50/000000/  left.png"/>
                 </Link>
+                <img src="https://img.icons8.com/metro/44/000000/plus-math.png" type="button" data-toggle="modal" data-target="#exampleModal"/>
+                <ImageAddPopup />
+
                 <h1 className="material">{this.category}</h1>
                 <div className="row justify-content-center">
                     {this.state.file.map( image =>
-                        <h1 className="centerize col col-lg-3 col-md-4 col-sm-6">{image}</h1>
+                        <img className="artimg centerize col col-lg-4 col-md-6 col-sm-8" src={image}></img>
                     )}
-                    {/* <img src="https://cnet3.cbsistatic.com/img/-qQkzFVyOPEoBRS7K5kKS0GFDvk=/940x0/2020/04/16/7d6d8ed2-e10c-4f91-b2dd-74fae951c6d8/bazaart-edit-app.jpg"></img> */}
+                    {/* <img className="artimg" src="https://gallery308.s3.us-east-2.amazonaws.com/FB%402x-1598129723441.png"></img> */}
+                    {/* <h1 className="centerize col col-lg-4 col-md-4 col-sm-6">{image}</h1> */}
                 </div>
             </div>
             

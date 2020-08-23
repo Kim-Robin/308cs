@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './robinMain.css';
 import {Link} from 'react-router-dom';
 import Randomize from './randomize.js';
-import CategoryAddPopup from './popup.js';
+import {CategoryAddPopup} from './popup.js';
 
 export default class robinMain extends Component{
 

@@ -26,6 +26,13 @@
     margin-bottom: 3rem;
   }
 
+  .artimg{
+    max-width: 580px;
+    max-height: 530px;
+    width: auto;
+    height: auto;
+  }
+
   .material{
     text-align: center;
   }
